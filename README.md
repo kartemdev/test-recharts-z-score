@@ -1,58 +1,44 @@
-<<<<<<< HEAD
-# test-recharts-z-score
-=======
-# React + TypeScript + Vite
+# Test Recharts Z-Score
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовый проект на React + TypeScript с использованием библиотеки Recharts для визуализации Z-оценки (Z-score) по временным данным.
 
-Currently, two official plugins are available:
+## 📌 Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Приложение отображает линейный график, где каждая точка соответствует Z-оценке значения относительно среднего. Это позволяет быстро выявлять аномалии или отклонения в данных.
 
-## Expanding the ESLint configuration
+Проект создан в рамках тестового задания и демонстрирует навыки работы с:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Recharts (визуализация данных)
+- TypeScript
+- Vite
+- Расчётом статистических показателей (среднее, стандартное отклонение, Z-score)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Технологии
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Recharts**
+
+## 🚀 Установка и запуск
+
+1. Клонируй репозиторий:
+
+```bash
+git clone https://github.com/kartemdev/test-recharts-z-score.git
+cd test-recharts-z-score
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Установите зависимости:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
->>>>>>> a4a1f00 (initial commit)
+
+3. Запустите приложение:
+
+```bash
+npm run dev
+```
+
+4. Перейди в браузере по адресу: http://localhost:5173
